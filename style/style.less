@@ -4,6 +4,42 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+//Global
+h2 {
+  font-family: 'TT Commons', sans-serif;
+  font-size: 32px;
+  text-align: center;
+  color: #38385F;
+  margin-bottom: 8px;
+}
+h3 {
+  font-family: 'TT Commons', sans-serif;
+  font-size: 24px;
+}
+.head-line {
+  width: 52px;
+  height: 8px;
+  background-color: #7D02CA;
+  margin: 0 auto 57px;
+  &.light {
+    background-color: #FFEC3D;
+  }
+}
+.btn-reg {
+  width: 462px;
+  height: 52px;
+  margin: 0 auto 133px;
+  background: #FFEC3D;
+  box-shadow: 0 8px 24px rgba(99, 19, 181, 0.1);
+  border-radius: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: #501FA5;
+  cursor: pointer;
+}
+
 // Header
 .header-wrapper {
   height: 720px;
@@ -147,19 +183,7 @@ nav {
 // Advantages
 .advantages {
   padding: 24px 64px 0;
-  h2 {
-    font-family: 'TT Commons', sans-serif;
-    font-size: 32px;
-    text-align: center;
-    color: #38385F;
-    margin-bottom: 8px;
-  }
-  .head-line {
-    width: 52px;
-    height: 8px;
-    background-color: #7D02CA;
-    margin: 0 auto 57px;
-  }
+  margin-bottom: 142px;
   .adv-desc {
     display: flex;
     justify-content: space-between;
@@ -169,8 +193,6 @@ nav {
       flex-direction: column;
       justify-content: space-between;
       h3 {
-        font-family: 'TT Commons', sans-serif;
-        font-size: 24px;
         color: #38385F;
         margin-bottom: 24px;
       }
@@ -203,6 +225,7 @@ nav {
             transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
             border-radius: 50%;
             position: relative;
+            user-select: none;
             > div {
               position: absolute;
               box-sizing: border-box;
@@ -213,6 +236,8 @@ nav {
               background-position: center;
               background-repeat: no-repeat;
               transition: all 0.3s ease-in-out;
+              cursor: pointer;
+              user-select: none;
             }
           }
           &:first-child > div > div {
@@ -230,7 +255,7 @@ nav {
           &:last-child > div > div{
             background-image: url("../img/advantages/icon/headphones.svg");
           }
-          &:hover, &.active {
+          &.active {
             border: 1px solid #ffffff;
             > div {
               border: 16px solid #ffffff;
@@ -293,6 +318,229 @@ nav {
           }
         }
       }
+    }
+  }
+}
+
+//Exchanges
+.exchanges {
+  min-height: 951px;
+  padding-top: 133px;
+  background: linear-gradient(148.51deg, #501FA5 3.16%, #A419B2 93.2%);
+  h2 {
+    color: #FFFFFF;
+  }
+}
+
+//Scheme of work
+.scheme-of-work {
+  ol {
+    list-style: decimal;
+  }
+  .main-content {
+    width: 1030px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    .image-left {
+      padding-top: 60px;
+      margin-right: 96px;
+    }
+    .steps-right {
+      li {
+        font-family: 'TT Commons', sans-serif;
+        font-size: 24px;
+        color: #38385F;
+        margin-bottom: 8px;
+      }
+      p {
+        line-height: 28px;
+        margin-bottom: 32px;
+        &:last-child {
+          margin-bottom: 59px;
+        }
+      }
+    }
+  }
+}
+
+//Main opportunities
+.main-opportunities {
+  padding: 92px 0 72px;
+  background: linear-gradient(180deg, #501FA5 0%, #8E1BAF 100%);
+  h2 {
+    color: #fff;
+  }
+  .head-line {
+    margin-bottom: 118px;
+  }
+  h3 {
+    color: #FFFFFF;
+    margin: 25px 0 16px;
+  }
+  p {
+    line-height: 28px;
+    color: rgba(255, 255, 255, 0.65);
+  }
+  .opportunity {
+    display: flex;
+    padding-left: 64px;
+    justify-content: space-between;
+    margin-bottom: 121px;
+    &:nth-child(3) {
+      margin-bottom: 185px;
+    }
+  }
+  .want-to-try {
+    padding: 0 64px;
+    img:nth-child(2), img:last-child {
+      margin-left: -160px;
+    }
+    .top-imgs {
+      margin-bottom: 40px;
+    }
+    h2 {
+      width: 462px;
+      margin: 0 auto 40px;
+    }
+    .btn-reg {
+      margin-bottom: 0;
+    }
+  }
+}
+
+//Tariffs
+
+.tariffs {
+  padding-top: 152px;
+  margin-bottom: 64px;
+  .head-line {
+    margin-bottom: 41px;
+  }
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 128px;
+    .card {
+      width: 272px;
+      box-shadow: 0 8px 24px rgba(125, 2, 202, 0.1);
+      border-radius: 4px;
+      .card-head {
+        height: 92px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #501FA5;
+        h3 {
+          color: #FFFFFF;
+        }
+      }
+      .card-body {
+        height: 358px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 49px 26px 24px;
+        .opps {
+          padding: 0 6px;
+          .opp {
+            box-sizing: border-box;
+            height: 40px;
+            border-top: 1px solid rgba(0, 0, 0, 0.04);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            &:last-child {
+              border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+            }
+            &:before {
+              content: '';
+              width: 20px;
+              height: 20px;
+              position: absolute;
+              top: 9px;
+              left: 20px;
+              background: url(../img/check-mark.png) no-repeat;
+            }
+          }
+        }
+        .price {
+          font-size: 48px;
+          color: #501FA5;
+          margin-bottom: 25px;
+          text-align: center;
+          &.best {
+            color: #EB4A60;
+            margin-bottom: 50px;
+          }
+        }
+        .discount {
+          text-align: center;
+          font-family: 'TT Commons', sans-serif;
+          font-size: 25.3833px;
+          margin-bottom: 24px;
+          position: relative;
+          &:before {
+            content: '';
+            width: 62px;
+            height: 1.41018px;
+            background-color: rgba(56, 56, 95, 0.65);
+            position: absolute;
+            top: 8px;
+            left: 79px;
+          }
+        }
+        .btn-buy {
+          height: 40px;
+          border-radius: 4px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #0CDFB2;
+          color: #ffffff;
+          cursor: pointer;
+          &.reg {
+            color: rgba(56, 56, 95, 0.85);
+            background-color: #F3F6FD;
+          }
+          &.best {
+            background-color: #EB4A60;
+          }
+        }
+      }
+      &.best-choice {
+        .card-head {
+          position: relative;
+          background: linear-gradient(90deg, #501FA5 0%, #A419B2 100%);
+          &:before {
+            content: '';
+            position: absolute;
+            top: -28px;
+            right: -28px;
+            background-image: url(../img/best-choice.png);
+            width: 112px;
+            height: 112px;
+          }
+        }
+        .card-body {
+          height: 428px;
+        }
+      }
+    }
+  }
+}
+
+//Payment methods
+
+.payment-methods {
+  padding: 0 129px;
+  .methods {
+    display: flex;
+    justify-content: space-between;
+    img {
+      margin-right: 75px;
     }
   }
 }

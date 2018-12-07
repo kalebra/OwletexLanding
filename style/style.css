@@ -3,6 +3,40 @@ body {
   color: rgba(56, 56, 95, 0.65);
   font-family: 'Roboto', sans-serif;
 }
+h2 {
+  font-family: 'TT Commons', sans-serif;
+  font-size: 32px;
+  text-align: center;
+  color: #38385F;
+  margin-bottom: 8px;
+}
+h3 {
+  font-family: 'TT Commons', sans-serif;
+  font-size: 24px;
+}
+.head-line {
+  width: 52px;
+  height: 8px;
+  background-color: #7D02CA;
+  margin: 0 auto 57px;
+}
+.head-line.light {
+  background-color: #FFEC3D;
+}
+.btn-reg {
+  width: 462px;
+  height: 52px;
+  margin: 0 auto 133px;
+  background: #FFEC3D;
+  box-shadow: 0 8px 24px rgba(99, 19, 181, 0.1);
+  border-radius: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: #501FA5;
+  cursor: pointer;
+}
 .header-wrapper {
   height: 720px;
   width: 100%;
@@ -135,19 +169,7 @@ nav .divider {
 }
 .advantages {
   padding: 24px 64px 0;
-}
-.advantages h2 {
-  font-family: 'TT Commons', sans-serif;
-  font-size: 32px;
-  text-align: center;
-  color: #38385F;
-  margin-bottom: 8px;
-}
-.advantages .head-line {
-  width: 52px;
-  height: 8px;
-  background-color: #7D02CA;
-  margin: 0 auto 57px;
+  margin-bottom: 142px;
 }
 .advantages .adv-desc {
   display: flex;
@@ -160,8 +182,6 @@ nav .divider {
   justify-content: space-between;
 }
 .advantages .adv-desc .adv-desc-left h3 {
-  font-family: 'TT Commons', sans-serif;
-  font-size: 24px;
   color: #38385F;
   margin-bottom: 24px;
 }
@@ -196,6 +216,7 @@ nav .divider {
   transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
   border-radius: 50%;
   position: relative;
+  user-select: none;
 }
 .advantages .adv-desc .adv-desc-left .adv-bar .advantage > div > div {
   position: absolute;
@@ -207,6 +228,8 @@ nav .divider {
   background-position: center;
   background-repeat: no-repeat;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  user-select: none;
 }
 .advantages .adv-desc .adv-desc-left .adv-bar .advantage:first-child > div > div {
   background-image: url("../img/advantages/icon/monitor.svg");
@@ -223,83 +246,271 @@ nav .divider {
 .advantages .adv-desc .adv-desc-left .adv-bar .advantage:last-child > div > div {
   background-image: url("../img/advantages/icon/headphones.svg");
 }
-.advantages .adv-desc .adv-desc-left .adv-bar .advantage:hover,
 .advantages .adv-desc .adv-desc-left .adv-bar .advantage.active {
   border: 1px solid #ffffff;
 }
-.advantages .adv-desc .adv-desc-left .adv-bar .advantage:hover > div,
 .advantages .adv-desc .adv-desc-left .adv-bar .advantage.active > div {
   border: 16px solid #ffffff;
   width: 104px;
   height: 104px;
 }
-.advantages .adv-desc .adv-desc-left .adv-bar .advantage:hover > div > div,
 .advantages .adv-desc .adv-desc-left .adv-bar .advantage.active > div > div {
   box-shadow: none;
 }
-.advantages .adv-desc .adv-desc-left .adv-bar .advantage:hover:first-child,
 .advantages .adv-desc .adv-desc-left .adv-bar .advantage.active:first-child {
   border-color: rgba(78, 52, 203, 0.08);
 }
-.advantages .adv-desc .adv-desc-left .adv-bar .advantage:hover:first-child > div,
 .advantages .adv-desc .adv-desc-left .adv-bar .advantage.active:first-child > div {
   border-color: rgba(78, 52, 203, 0.24);
 }
-.advantages .adv-desc .adv-desc-left .adv-bar .advantage:hover:first-child > div > div,
 .advantages .adv-desc .adv-desc-left .adv-bar .advantage.active:first-child > div > div {
   background-image: url("../img/advantages/icon/monitor-active.svg");
   background-color: #4E34CB;
 }
-.advantages .adv-desc .adv-desc-left .adv-bar .advantage:hover:nth-child(2),
 .advantages .adv-desc .adv-desc-left .adv-bar .advantage.active:nth-child(2) {
   border-color: rgba(64, 186, 250, 0.08);
 }
-.advantages .adv-desc .adv-desc-left .adv-bar .advantage:hover:nth-child(2) > div,
 .advantages .adv-desc .adv-desc-left .adv-bar .advantage.active:nth-child(2) > div {
   border-color: rgba(64, 186, 250, 0.24);
 }
-.advantages .adv-desc .adv-desc-left .adv-bar .advantage:hover:nth-child(2) > div > div,
 .advantages .adv-desc .adv-desc-left .adv-bar .advantage.active:nth-child(2) > div > div {
   background-image: url("../img/advantages/icon/cpu-active.svg");
   background-color: #40BAFA;
 }
-.advantages .adv-desc .adv-desc-left .adv-bar .advantage:hover:nth-child(3),
 .advantages .adv-desc .adv-desc-left .adv-bar .advantage.active:nth-child(3) {
   border-color: rgba(243, 186, 47, 0.08);
 }
-.advantages .adv-desc .adv-desc-left .adv-bar .advantage:hover:nth-child(3) > div,
 .advantages .adv-desc .adv-desc-left .adv-bar .advantage.active:nth-child(3) > div {
   border-color: rgba(243, 186, 47, 0.24);
 }
-.advantages .adv-desc .adv-desc-left .adv-bar .advantage:hover:nth-child(3) > div > div,
 .advantages .adv-desc .adv-desc-left .adv-bar .advantage.active:nth-child(3) > div > div {
   background-image: url("../img/advantages/icon/user-active.svg");
   background-color: #F3BA2F;
 }
-.advantages .adv-desc .adv-desc-left .adv-bar .advantage:hover:nth-child(4),
 .advantages .adv-desc .adv-desc-left .adv-bar .advantage.active:nth-child(4) {
   border-color: rgba(116, 207, 14, 0.08);
 }
-.advantages .adv-desc .adv-desc-left .adv-bar .advantage:hover:nth-child(4) > div,
 .advantages .adv-desc .adv-desc-left .adv-bar .advantage.active:nth-child(4) > div {
   border-color: rgba(116, 207, 14, 0.24);
 }
-.advantages .adv-desc .adv-desc-left .adv-bar .advantage:hover:nth-child(4) > div > div,
 .advantages .adv-desc .adv-desc-left .adv-bar .advantage.active:nth-child(4) > div > div {
   background-image: url("../img/advantages/icon/bar-chart-active.svg");
   background-color: #74CF0E;
 }
-.advantages .adv-desc .adv-desc-left .adv-bar .advantage:hover:last-child,
 .advantages .adv-desc .adv-desc-left .adv-bar .advantage.active:last-child {
   border-color: rgba(89, 126, 247, 0.08);
 }
-.advantages .adv-desc .adv-desc-left .adv-bar .advantage:hover:last-child > div,
 .advantages .adv-desc .adv-desc-left .adv-bar .advantage.active:last-child > div {
   border-color: rgba(89, 126, 247, 0.24);
 }
-.advantages .adv-desc .adv-desc-left .adv-bar .advantage:hover:last-child > div > div,
 .advantages .adv-desc .adv-desc-left .adv-bar .advantage.active:last-child > div > div {
   background-image: url("../img/advantages/icon/headphones-active.svg");
   background-color: #597EF7;
+}
+.exchanges {
+  min-height: 951px;
+  padding-top: 133px;
+  background: linear-gradient(148.51deg, #501FA5 3.16%, #A419B2 93.2%);
+}
+.exchanges h2 {
+  color: #FFFFFF;
+}
+.scheme-of-work ol {
+  list-style: decimal;
+}
+.scheme-of-work .main-content {
+  width: 1030px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.scheme-of-work .main-content .image-left {
+  padding-top: 60px;
+  margin-right: 96px;
+}
+.scheme-of-work .main-content .steps-right li {
+  font-family: 'TT Commons', sans-serif;
+  font-size: 24px;
+  color: #38385F;
+  margin-bottom: 8px;
+}
+.scheme-of-work .main-content .steps-right p {
+  line-height: 28px;
+  margin-bottom: 32px;
+}
+.scheme-of-work .main-content .steps-right p:last-child {
+  margin-bottom: 59px;
+}
+.main-opportunities {
+  padding: 92px 0 72px;
+  background: linear-gradient(180deg, #501FA5 0%, #8E1BAF 100%);
+}
+.main-opportunities h2 {
+  color: #fff;
+}
+.main-opportunities .head-line {
+  margin-bottom: 118px;
+}
+.main-opportunities h3 {
+  color: #FFFFFF;
+  margin: 25px 0 16px;
+}
+.main-opportunities p {
+  line-height: 28px;
+  color: rgba(255, 255, 255, 0.65);
+}
+.main-opportunities .opportunity {
+  display: flex;
+  padding-left: 64px;
+  justify-content: space-between;
+  margin-bottom: 121px;
+}
+.main-opportunities .opportunity:nth-child(3) {
+  margin-bottom: 185px;
+}
+.main-opportunities .want-to-try {
+  padding: 0 64px;
+}
+.main-opportunities .want-to-try img:nth-child(2),
+.main-opportunities .want-to-try img:last-child {
+  margin-left: -160px;
+}
+.main-opportunities .want-to-try .top-imgs {
+  margin-bottom: 40px;
+}
+.main-opportunities .want-to-try h2 {
+  width: 462px;
+  margin: 0 auto 40px;
+}
+.main-opportunities .want-to-try .btn-reg {
+  margin-bottom: 0;
+}
+.tariffs {
+  padding-top: 152px;
+  margin-bottom: 64px;
+}
+.tariffs .head-line {
+  margin-bottom: 41px;
+}
+.tariffs .cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 128px;
+}
+.tariffs .cards .card {
+  width: 272px;
+  box-shadow: 0 8px 24px rgba(125, 2, 202, 0.1);
+  border-radius: 4px;
+}
+.tariffs .cards .card .card-head {
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #501FA5;
+}
+.tariffs .cards .card .card-head h3 {
+  color: #FFFFFF;
+}
+.tariffs .cards .card .card-body {
+  height: 358px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 49px 26px 24px;
+}
+.tariffs .cards .card .card-body .opps {
+  padding: 0 6px;
+}
+.tariffs .cards .card .card-body .opps .opp {
+  box-sizing: border-box;
+  height: 40px;
+  border-top: 1px solid rgba(0, 0, 0, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.tariffs .cards .card .card-body .opps .opp:last-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+.tariffs .cards .card .card-body .opps .opp:before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 9px;
+  left: 20px;
+  background: url(../img/check-mark.png) no-repeat;
+}
+.tariffs .cards .card .card-body .price {
+  font-size: 48px;
+  color: #501FA5;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.tariffs .cards .card .card-body .price.best {
+  color: #EB4A60;
+  margin-bottom: 50px;
+}
+.tariffs .cards .card .card-body .discount {
+  text-align: center;
+  font-family: 'TT Commons', sans-serif;
+  font-size: 25.3833px;
+  margin-bottom: 24px;
+  position: relative;
+}
+.tariffs .cards .card .card-body .discount:before {
+  content: '';
+  width: 62px;
+  height: 1.41018px;
+  background-color: rgba(56, 56, 95, 0.65);
+  position: absolute;
+  top: 8px;
+  left: 79px;
+}
+.tariffs .cards .card .card-body .btn-buy {
+  height: 40px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0CDFB2;
+  color: #ffffff;
+  cursor: pointer;
+}
+.tariffs .cards .card .card-body .btn-buy.reg {
+  color: rgba(56, 56, 95, 0.85);
+  background-color: #F3F6FD;
+}
+.tariffs .cards .card .card-body .btn-buy.best {
+  background-color: #EB4A60;
+}
+.tariffs .cards .card.best-choice .card-head {
+  position: relative;
+  background: linear-gradient(90deg, #501FA5 0%, #A419B2 100%);
+}
+.tariffs .cards .card.best-choice .card-head:before {
+  content: '';
+  position: absolute;
+  top: -28px;
+  right: -28px;
+  background-image: url(../img/best-choice.png);
+  width: 112px;
+  height: 112px;
+}
+.tariffs .cards .card.best-choice .card-body {
+  height: 428px;
+}
+.payment-methods {
+  padding: 0 129px;
+}
+.payment-methods .methods {
+  display: flex;
+  justify-content: space-between;
+}
+.payment-methods .methods img {
+  margin-right: 75px;
 }
 /*# sourceMappingURL=style.css.map */
