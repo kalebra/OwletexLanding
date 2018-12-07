@@ -168,8 +168,10 @@ nav .divider {
   color: rgba(255, 255, 255, 0.85);
 }
 .advantages {
+  box-sizing: border-box;
+  max-width: 1440px;
+  margin: 0 auto 142px;
   padding: 24px 64px 0;
-  margin-bottom: 142px;
 }
 .advantages .adv-desc {
   display: flex;
@@ -324,26 +326,26 @@ nav .divider {
   justify-content: space-between;
   margin: 0 auto;
 }
-.scheme-of-work .main-content .image-left {
+.scheme-of-work .main-content .scheme-image {
   padding-top: 60px;
   margin-right: 96px;
 }
-.scheme-of-work .main-content .steps-right li {
+.scheme-of-work .main-content .scheme-steps li {
   font-family: 'TT Commons', sans-serif;
   font-size: 24px;
   color: #38385F;
   margin-bottom: 8px;
 }
-.scheme-of-work .main-content .steps-right p {
+.scheme-of-work .main-content .scheme-steps p {
   line-height: 28px;
   margin-bottom: 32px;
 }
-.scheme-of-work .main-content .steps-right p:last-child {
+.scheme-of-work .main-content .scheme-steps p:last-child {
   margin-bottom: 59px;
 }
 .main-opportunities {
-  padding: 92px 0 72px;
   background: linear-gradient(180deg, #501FA5 0%, #8E1BAF 100%);
+  padding: 92px 0 72px;
 }
 .main-opportunities h2 {
   color: #fff;
@@ -360,13 +362,24 @@ nav .divider {
   color: rgba(255, 255, 255, 0.65);
 }
 .main-opportunities .opportunity {
+  margin: 0 auto 214px;
   display: flex;
-  padding-left: 64px;
+  padding: 0 64px 121px;
   justify-content: space-between;
-  margin-bottom: 121px;
+  position: relative;
+  overflow: hidden;
+  max-width: 1673px;
+  box-sizing: border-box;
 }
 .main-opportunities .opportunity:nth-child(3) {
   margin-bottom: 185px;
+}
+.main-opportunities .opportunity .opp-text {
+  flex: 0 1 624px;
+}
+.main-opportunities .opportunity .opp-img {
+  position: absolute;
+  left: 699px;
 }
 .main-opportunities .want-to-try {
   padding: 0 64px;
@@ -375,7 +388,7 @@ nav .divider {
 .main-opportunities .want-to-try img:last-child {
   margin-left: -160px;
 }
-.main-opportunities .want-to-try .top-imgs {
+.main-opportunities .want-to-try .imgs-top {
   margin-bottom: 40px;
 }
 .main-opportunities .want-to-try h2 {
@@ -387,7 +400,7 @@ nav .divider {
 }
 .tariffs {
   padding-top: 152px;
-  margin-bottom: 64px;
+  margin-bottom: 154px;
 }
 .tariffs .head-line {
   margin-bottom: 41px;
@@ -397,6 +410,7 @@ nav .divider {
   justify-content: space-between;
   align-items: center;
   padding: 0 128px;
+  margin-bottom: 64px;
 }
 .tariffs .cards .card {
   width: 272px;
@@ -503,14 +517,30 @@ nav .divider {
 .tariffs .cards .card.best-choice .card-body {
   height: 428px;
 }
-.payment-methods {
-  padding: 0 129px;
-}
-.payment-methods .methods {
+.tariffs .methods {
+  margin-top: 24px;
   display: flex;
   justify-content: space-between;
+  padding: 0 129px;
 }
-.payment-methods .methods img {
+.tariffs .methods > div {
+  flex: 0 1 50%;
+}
+.tariffs .methods .methods-right img {
+  margin-left: 204px;
+}
+.tariffs .methods img {
   margin-right: 75px;
+}
+.faq {
+  padding-top: 24px;
+  background: linear-gradient(144.84deg, #501FA5 -5.44%, #A419B2 91.66%);
+}
+.faq h2 {
+  color: #FFFFFF;
+}
+.faq ul li,
+.faq ul p {
+  color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
