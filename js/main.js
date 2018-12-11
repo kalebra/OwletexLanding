@@ -1,3 +1,5 @@
+AOS.init();
+
 $(function() {
     $(".advantage").click(function() {
         if (!$(this).hasClass("active")) {
@@ -16,7 +18,13 @@ $(function() {
             $(".quick-answers .question-head").removeClass('active');
             $(".quick-answers .question-body").slideUp();
         }
-    })
+    });
+
+    $('.cards-tariffs').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1
+    });
 
     $('.news-cards').slick({
         infinite: true,
