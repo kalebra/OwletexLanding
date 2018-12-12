@@ -25,10 +25,20 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="618">
-                  <caret line="149" column="34" lean-forward="true" selection-start-line="149" selection-start-column="34" selection-end-line="149" selection-end-column="34" />
+                <state relative-caret-position="437">
+                  <caret line="56" column="37" lean-forward="true" selection-start-line="56" selection-start-column="37" selection-end-line="56" selection-end-column="37" />
                 </state>
               </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/img/partners/foundico.png">
+              <provider selected="true" editor-type-id="images" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/img/partners/neuronx.io.png">
+              <provider selected="true" editor-type-id="images" />
             </entry>
           </file>
         </leaf>
@@ -38,8 +48,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/style/style.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="524">
-                  <caret line="427" column="17" lean-forward="true" selection-start-line="427" selection-start-column="17" selection-end-line="427" selection-end-column="17" />
+                <state relative-caret-position="668">
+                  <caret line="885" column="7" selection-start-line="885" selection-start-column="7" selection-end-line="885" selection-end-column="7" />
                 </state>
               </provider>
             </entry>
@@ -47,8 +57,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="456">
-                  <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+                <state relative-caret-position="589">
+                  <caret line="31" column="25" lean-forward="true" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
                 </state>
               </provider>
             </entry>
@@ -141,12 +151,7 @@
               <item name="OwletexLanding" type="b2602c69:ProjectViewProjectNode" />
               <item name="OwletexLanding" type="462c0819:PsiDirectoryNode" />
               <item name="img" type="462c0819:PsiDirectoryNode" />
-              <item name="opportunities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OwletexLanding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OwletexLanding" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="partners" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -198,16 +203,18 @@
       <workItem from="1544451686659" duration="41000" />
       <workItem from="1544451857539" duration="9128000" />
       <workItem from="1544523023852" duration="7820000" />
-      <workItem from="1544538623469" duration="7730000" />
+      <workItem from="1544538623469" duration="8805000" />
+      <workItem from="1544612586985" duration="4591000" />
+      <workItem from="1544619342383" duration="5545000" />
+      <workItem from="1544628884849" duration="4756000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88660000" />
+    <option name="totallyTimeSpent" value="104627000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13277134" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -220,7 +227,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32941177" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32855567" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32855567" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32855567" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -309,13 +316,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/img/opportunities/opportunity1-small.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -325,17 +325,30 @@
     <entry file="file://$PROJECT_DIR$/img/opportunities/opportunity1.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="31" column="25" lean-forward="true" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/partners/foundico.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/partners/neuronx.io.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/style/style.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="427" column="17" lean-forward="true" selection-start-line="427" selection-start-column="17" selection-end-line="427" selection-end-column="17" />
+        <state relative-caret-position="668">
+          <caret line="885" column="7" selection-start-line="885" selection-start-column="7" selection-end-line="885" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="618">
-          <caret line="149" column="34" lean-forward="true" selection-start-line="149" selection-start-column="34" selection-end-line="149" selection-end-column="34" />
+        <state relative-caret-position="437">
+          <caret line="56" column="37" lean-forward="true" selection-start-line="56" selection-start-column="37" selection-end-line="56" selection-end-column="37" />
         </state>
       </provider>
     </entry>

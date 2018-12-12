@@ -31,4 +31,13 @@ $(function() {
         slidesToShow: 3,
         slidesToScroll: 1
     });
+
+    $(window).scroll(function(){
+        if ($('.fir').offset().top >= '5810') {
+          $('.opp-imgs').addClass('smaller');
+        } else {
+            $('.opp-imgs').removeClass('smaller');
+        }
+    });
+
 });
