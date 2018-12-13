@@ -33,7 +33,7 @@ $(function() {
     });
 
     $(window).scroll(function(){
-        if ($('.fir').offset().top >= '5810') {
+        if ($('.fir').offset().top >= '5800') {
           $('.opp-imgs').addClass('smaller');
         } else {
             $('.opp-imgs').removeClass('smaller');
