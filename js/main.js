@@ -34,7 +34,7 @@ $(function() {
 
     $(window).scroll(function(){
         console.log($('.fir').offset().top);
-        if ($('.fir').offset().top >= '5710') {
+        if ($('.fir').offset().top >= '5600') {
           $('.opp-imgs').addClass('smaller');
         } else {
             $('.opp-imgs').removeClass('smaller');
