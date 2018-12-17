@@ -84,6 +84,7 @@ header {
   max-width: 1440px;
   margin: 0 auto;
   height: 720px;
+  position: relative;
 }
 .top-line {
   box-sizing: border-box;
@@ -347,12 +348,25 @@ nav .divider {
   background-color: #597EF7;
 }
 .exchanges {
-  padding: 133px 0 200px;
+  height: 952px;
   margin-bottom: 45px;
-  background: linear-gradient(148.51deg, #501FA5 3.16%, #A419B2 93.2%);
+  position: relative;
+}
+.exchanges > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
 }
 .exchanges h2 {
+  position: relative;
+  padding-top: 133px;
   color: #FFFFFF;
+}
+.exchanges .head-line {
+  position: relative;
+  margin-bottom: 37px;
 }
 .exchanges #exchanges-anim {
   width: 100%;
@@ -647,7 +661,14 @@ nav .divider {
 }
 .faq {
   padding: 24px 0 225px;
-  background: linear-gradient(144.84deg, #501FA5 -5.44%, #A419B2 91.66%);
+  position: relative;
+}
+.faq > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
 }
 .faq h2 {
   color: #FFFFFF;
