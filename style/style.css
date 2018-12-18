@@ -351,13 +351,12 @@ nav .divider {
   height: 952px;
   margin-bottom: 45px;
   position: relative;
+  overflow: hidden;
 }
 .exchanges > img {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: bottom;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .exchanges h2 {
   position: relative;
@@ -377,16 +376,25 @@ nav .divider {
   text-align: center;
   opacity: 1;
 }
+.scheme-of-work {
+  overflow: hidden;
+}
 .scheme-of-work ol {
   list-style: decimal;
 }
 .scheme-of-work .main-content {
+  position: relative;
   width: 1440px;
   padding: 0 206px;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   margin: 0 auto 60px;
+}
+.scheme-of-work .main-content > img {
+  position: absolute;
+  top: -95px;
+  right: -320px;
 }
 .scheme-of-work .main-content .scheme-image {
   display: flex;
@@ -408,6 +416,15 @@ nav .divider {
 }
 .scheme-of-work .main-content .scheme-steps p:last-child {
   margin-bottom: 0;
+}
+.scheme-of-work .main-content #scheme-anim {
+  width: 100%;
+  height: 526px;
+  display: block;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  text-align: center;
+  opacity: 1;
 }
 .main-opportunities {
   background: linear-gradient(180deg, #501FA5 0%, #8E1BAF 100%);
@@ -435,6 +452,7 @@ nav .divider {
   padding-left: 64px;
   height: 2200px;
   box-sizing: border-box;
+  position: relative;
 }
 .main-opportunities .main-content .opp-text {
   width: 624px;
@@ -455,17 +473,25 @@ nav .divider {
   width: 640px;
   padding-bottom: 120px;
   box-sizing: border-box;
+  position: relative;
 }
-.main-opportunities .main-content .opp-imgs.smaller > div {
+.main-opportunities .main-content .opp-imgs .opp-img-back {
+  position: absolute;
+  width: 130%;
+  height: 100%;
+  background: url(../img/opportunities-greed1.svg) no-repeat 70px 310px, url(../img/opportunities-greed2.svg) no-repeat 95px 970px, url(../img/opportunities-greed3.svg) no-repeat -35px 1700px;
+  background-size: 755px 555px;
+}
+.main-opportunities .main-content .opp-imgs.smaller .opp-img {
   width: 541px;
 }
-.main-opportunities .main-content .opp-imgs.smaller > div:first-child {
+.main-opportunities .main-content .opp-imgs.smaller .opp-img:first-child {
   transform: translateX(-735px);
 }
-.main-opportunities .main-content .opp-imgs.smaller > div:nth-child(2) {
+.main-opportunities .main-content .opp-imgs.smaller .opp-img:nth-child(2) {
   transform: translateX(-345px);
 }
-.main-opportunities .main-content .opp-imgs.smaller > div:nth-child(3) {
+.main-opportunities .main-content .opp-imgs.smaller .opp-img:nth-child(3) {
   transform: translateX(45px);
 }
 .main-opportunities .main-content .opp-imgs.smaller img {
@@ -660,24 +686,29 @@ nav .divider {
   margin-right: 75px;
 }
 .faq {
-  padding: 24px 0 225px;
   position: relative;
 }
 .faq > img {
   position: absolute;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: bottom;
+  object-fit: contain;
+  object-position: right;
 }
 .faq h2 {
+  position: relative;
+  padding-top: 24px;
   color: #FFFFFF;
 }
+.faq .head-line {
+  position: relative;
+}
 .faq-inner {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 0 64px;
+  padding: 0 64px 216px;
   max-width: 1440px;
   margin: 0 auto;
 }
