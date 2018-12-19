@@ -76,12 +76,29 @@ div {
   width: 100%;
   margin-bottom: 112px;
   position: relative;
-  > img {
-    position: absolute;
+  .header-background-wrapper {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: bottom;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    > img {
+      position: absolute;
+      &:first-child {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: bottom;
+      }
+      &:nth-child(2) {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 1924px;
+        height: 777px;
+        top: -50px;
+      }
+    }
   }
 }
 
@@ -200,6 +217,8 @@ nav {
     position: absolute;
     right: 0;
     top: -120px;
+    width: 842px;
+    height: 779px;
   }
 }
 
@@ -365,36 +384,25 @@ nav {
 
 //Exchanges
 .exchanges {
-  height: 952px;
   margin-bottom: 45px;
+  padding: 92px 0 143px;
   position: relative;
+  background: linear-gradient(148.81deg, #501FA5 -0.06%, #A419B2 96.95%);
   overflow: hidden;
   > img {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    //width: 100%;
-    //height: 100%;
-    //object-fit: cover;
-    //object-position: bottom;
+    top: -190px;
   }
   h2 {
-    position: relative;
-    padding-top: 133px;
     color: #FFFFFF;
   }
   .head-line {
-    position: relative;
     margin-bottom: 37px;
   }
   #exchanges-anim {
-    width:100%;
-    height: 526px;
-    display:block;
-    overflow: hidden;
-    transform: translate3d(0,0,0);
-    text-align: center;
-    opacity: 1;
+    height: 531px;
   }
 }
 
@@ -493,29 +501,36 @@ nav {
       margin-top: -200px;
       height: 2490px;
       margin-left: 40px;
-      width: 640px;
-      padding-bottom: 120px;
+      width: 680px;
       box-sizing: border-box;
       position: relative;
-      .opp-img-back {
+      .opp-img-back-wrapp {
         position: absolute;
-        width: 130%;
+        width: 100%;
         height: 100%;
-        background: url(../img/opportunities-greed1.svg) no-repeat 70px 310px,
-                    url(../img/opportunities-greed2.svg) no-repeat 95px 970px,
-                    url(../img/opportunities-greed3.svg) no-repeat -35px 1700px;
-        background-size: 755px 555px;
+        overflow: hidden;
+        .opp-img-back {
+          position: absolute;
+          right: -170px;
+          width: 120%;
+          height: 100%;
+          background: url(../img/opportunities-greed1.svg) no-repeat 0 310px,
+          url(../img/opportunities-greed2.svg) no-repeat 22px 970px,
+          url(../img/opportunities-greed3.svg) no-repeat -58px 1700px;
+          background-size: 755px 555px;
+        }
       }
       &.smaller {
+        padding-bottom: 100px;
         .opp-img {
           width: 541px;
-          &:first-child {
+          &:nth-child(2) {
             transform: translateX(-735px);
           }
-          &:nth-child(2) {
+          &:nth-child(3) {
             transform: translateX(-345px);
           }
-          &:nth-child(3){
+          &:nth-child(4){
             transform: translateX(45px);
           }
         }
@@ -539,8 +554,14 @@ nav {
         top: calc(50vh - 340px + 100px);
         margin-bottom: 0;
       }
+      &:nth-child(4) {
+        align-self: flex-start;
+        top: calc(50vh - 350px + 100px);
+        margin-bottom: 0;
+      }
       img {
         transition: transform 0.5s ease-in-out;
+        width: 125%;
       }
     }
   }
@@ -569,12 +590,22 @@ nav {
 .tariffs {
   padding-top: 152px;
   margin-bottom: 154px;
+  position: relative;
+  overflow: hidden;
+  > img {
+    position: absolute;
+    top: 19px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1657px;
+    height: 936px;
+  }
   .head-line {
     margin-bottom: 41px;
   }
   .cards-tariffs {
     max-width: 1440px;
-    margin: 0 auto 64px;
+    margin: 0 auto 40px;
     padding: 0 128px;
     box-sizing: border-box;
     .slick-prev {
@@ -610,6 +641,7 @@ nav {
         flex-direction: column;
         justify-content: space-between;
         padding: 49px 26px 24px;
+        background: #ffffff;
         .opps {
           padding: 0 6px;
           .opp {
@@ -721,13 +753,24 @@ nav {
 
 //faq
 .faq {
+  height: 900px;
   position: relative;
+  overflow: hidden;
   > img {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: right;
+    &:first-child {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: right;
+    }
+    &:nth-child(2) {
+      left: 50%;
+      transform: translateX(-50%);
+      top: 200px;
+      width: 1590px;
+      height: 704px;
+    }
   }
   h2 {
     position: relative;
@@ -756,7 +799,7 @@ nav {
   box-shadow: 0 8px 40px rgba(125, 2, 202, 0.16);
   border-radius: 4px;
   .question-head {
-    height: 54px;
+    height: 55px;
     display: flex;
     align-items: center;
     padding-left: 24px;
@@ -830,7 +873,7 @@ nav {
   .ask-form-head {
     font-size: 14px;
     color: #38385F;
-    height: 54px;
+    height: 52px;
     border-bottom: 1px solid #E8E8E8;
     display: flex;
     align-items: center;
@@ -841,6 +884,7 @@ nav {
     flex-direction: column;
     padding: 24px;
     input, textarea {
+      height: 145px;
       border: 1px solid rgba(0, 0, 0, 0.15);
       box-sizing: border-box;
       border-radius: 4px;
@@ -1129,10 +1173,15 @@ footer {
   }
 }
 
+@media screen and (min-width: 1780px) {
+  .main-opportunities .main-content .opp-imgs .opp-img-back-wrapp {
+    overflow: visible;
+  }
+
+}
+
 @media screen and (min-width: 1441px) {
-  .opp-img {
-    img {
-      width: 100%;
-    }
+  .main-opportunities .main-content .opp-img img {
+    width: 100%;
   }
 }

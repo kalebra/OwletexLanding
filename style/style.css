@@ -72,12 +72,29 @@ div {
   margin-bottom: 112px;
   position: relative;
 }
-.header-wrapper > img {
+.header-wrapper .header-background-wrapper {
+  width: 100%;
+  height: 100%;
   position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.header-wrapper .header-background-wrapper > img {
+  position: absolute;
+}
+.header-wrapper .header-background-wrapper > img:first-child {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: bottom;
+}
+.header-wrapper .header-background-wrapper > img:nth-child(2) {
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1924px;
+  height: 777px;
+  top: -50px;
 }
 header {
   width: 100%;
@@ -189,6 +206,8 @@ nav .divider {
   position: absolute;
   right: 0;
   top: -120px;
+  width: 842px;
+  height: 779px;
 }
 .header-main-left {
   flex: 0 1 42%;
@@ -348,33 +367,26 @@ nav .divider {
   background-color: #597EF7;
 }
 .exchanges {
-  height: 952px;
   margin-bottom: 45px;
+  padding: 92px 0 143px;
   position: relative;
+  background: linear-gradient(148.81deg, #501FA5 -0.06%, #A419B2 96.95%);
   overflow: hidden;
 }
 .exchanges > img {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  top: -190px;
 }
 .exchanges h2 {
-  position: relative;
-  padding-top: 133px;
   color: #FFFFFF;
 }
 .exchanges .head-line {
-  position: relative;
   margin-bottom: 37px;
 }
 .exchanges #exchanges-anim {
-  width: 100%;
-  height: 526px;
-  display: block;
-  overflow: hidden;
-  transform: translate3d(0, 0, 0);
-  text-align: center;
-  opacity: 1;
+  height: 531px;
 }
 .scheme-of-work {
   overflow: hidden;
@@ -470,28 +482,37 @@ nav .divider {
   margin-top: -200px;
   height: 2490px;
   margin-left: 40px;
-  width: 640px;
-  padding-bottom: 120px;
+  width: 680px;
   box-sizing: border-box;
   position: relative;
 }
-.main-opportunities .main-content .opp-imgs .opp-img-back {
+.main-opportunities .main-content .opp-imgs .opp-img-back-wrapp {
   position: absolute;
-  width: 130%;
+  width: 100%;
   height: 100%;
-  background: url(../img/opportunities-greed1.svg) no-repeat 70px 310px, url(../img/opportunities-greed2.svg) no-repeat 95px 970px, url(../img/opportunities-greed3.svg) no-repeat -35px 1700px;
+  overflow: hidden;
+}
+.main-opportunities .main-content .opp-imgs .opp-img-back-wrapp .opp-img-back {
+  position: absolute;
+  right: -170px;
+  width: 120%;
+  height: 100%;
+  background: url(../img/opportunities-greed1.svg) no-repeat 0 310px, url(../img/opportunities-greed2.svg) no-repeat 22px 970px, url(../img/opportunities-greed3.svg) no-repeat -58px 1700px;
   background-size: 755px 555px;
+}
+.main-opportunities .main-content .opp-imgs.smaller {
+  padding-bottom: 100px;
 }
 .main-opportunities .main-content .opp-imgs.smaller .opp-img {
   width: 541px;
 }
-.main-opportunities .main-content .opp-imgs.smaller .opp-img:first-child {
+.main-opportunities .main-content .opp-imgs.smaller .opp-img:nth-child(2) {
   transform: translateX(-735px);
 }
-.main-opportunities .main-content .opp-imgs.smaller .opp-img:nth-child(2) {
+.main-opportunities .main-content .opp-imgs.smaller .opp-img:nth-child(3) {
   transform: translateX(-345px);
 }
-.main-opportunities .main-content .opp-imgs.smaller .opp-img:nth-child(3) {
+.main-opportunities .main-content .opp-imgs.smaller .opp-img:nth-child(4) {
   transform: translateX(45px);
 }
 .main-opportunities .main-content .opp-imgs.smaller img {
@@ -513,8 +534,14 @@ nav .divider {
   top: calc(50vh - 340px + 100px);
   margin-bottom: 0;
 }
+.main-opportunities .main-content .opp-img:nth-child(4) {
+  align-self: flex-start;
+  top: calc(50vh - 350px + 100px);
+  margin-bottom: 0;
+}
 .main-opportunities .main-content .opp-img img {
   transition: transform 0.5s ease-in-out;
+  width: 125%;
 }
 .main-opportunities .want-to-try {
   margin-top: -200px;
@@ -538,13 +565,23 @@ nav .divider {
 .tariffs {
   padding-top: 152px;
   margin-bottom: 154px;
+  position: relative;
+  overflow: hidden;
+}
+.tariffs > img {
+  position: absolute;
+  top: 19px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1657px;
+  height: 936px;
 }
 .tariffs .head-line {
   margin-bottom: 41px;
 }
 .tariffs .cards-tariffs {
   max-width: 1440px;
-  margin: 0 auto 64px;
+  margin: 0 auto 40px;
   padding: 0 128px;
   box-sizing: border-box;
 }
@@ -582,6 +619,7 @@ nav .divider {
   flex-direction: column;
   justify-content: space-between;
   padding: 49px 26px 24px;
+  background: #ffffff;
 }
 .tariffs .cards-tariffs .card-tariffs .card-body .opps {
   padding: 0 6px;
@@ -686,14 +724,25 @@ nav .divider {
   margin-right: 75px;
 }
 .faq {
+  height: 900px;
   position: relative;
+  overflow: hidden;
 }
 .faq > img {
   position: absolute;
+}
+.faq > img:first-child {
   width: 100%;
   height: 100%;
   object-fit: contain;
   object-position: right;
+}
+.faq > img:nth-child(2) {
+  left: 50%;
+  transform: translateX(-50%);
+  top: 200px;
+  width: 1590px;
+  height: 704px;
 }
 .faq h2 {
   position: relative;
@@ -720,7 +769,7 @@ nav .divider {
   border-radius: 4px;
 }
 .quick-answers .question-head {
-  height: 54px;
+  height: 55px;
   display: flex;
   align-items: center;
   padding-left: 24px;
@@ -791,7 +840,7 @@ nav .divider {
 .ask-form .ask-form-head {
   font-size: 14px;
   color: #38385F;
-  height: 54px;
+  height: 52px;
   border-bottom: 1px solid #E8E8E8;
   display: flex;
   align-items: center;
@@ -804,6 +853,7 @@ nav .divider {
 }
 .ask-form .ask-from-body input,
 .ask-form .ask-from-body textarea {
+  height: 145px;
   border: 1px solid rgba(0, 0, 0, 0.15);
   box-sizing: border-box;
   border-radius: 4px;
@@ -1065,8 +1115,13 @@ footer .copyrights div {
 footer .copyrights div:first-child {
   max-width: 646px;
 }
+@media screen and (min-width: 1780px) {
+  .main-opportunities .main-content .opp-imgs .opp-img-back-wrapp {
+    overflow: visible;
+  }
+}
 @media screen and (min-width: 1441px) {
-  .opp-img img {
+  .main-opportunities .main-content .opp-img img {
     width: 100%;
   }
 }
