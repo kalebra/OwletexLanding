@@ -3,10 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="3a9f0bfe-2a7b-42d2-9a91-6532b4e6d010" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/exchanges-bg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/exchanges-greed.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/exchanges-greed.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/header-greed.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/header-greed.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/header-main-img.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/header-main-img.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/advantages/img/adv-example.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/advantages/img/adv-example.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/delete/exchanges-bg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/delete/exchanges-greed.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/delete/header-greed.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/delete/header-main-img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/faq-bg.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/faq-bg.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.css" afterDir="false" />
@@ -23,14 +25,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.50060755">
+    <splitter split-orientation="horizontal" split-proportion="0.56379104">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="185">
-                  <caret line="274" column="67" lean-forward="true" selection-start-line="274" selection-start-column="67" selection-end-line="274" selection-end-column="67" />
+                <state relative-caret-position="453">
+                  <caret line="463" column="18" lean-forward="true" selection-start-line="463" selection-start-column="18" selection-end-line="463" selection-end-column="18" />
                 </state>
               </provider>
             </entry>
@@ -42,8 +44,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/style/style.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="561">
-                  <caret line="755" column="16" selection-start-line="755" selection-start-column="16" selection-end-line="755" selection-end-column="16" />
+                <state relative-caret-position="528">
+                  <caret line="1353" column="35" selection-start-line="1353" selection-start-column="35" selection-end-line="1353" selection-end-column="35" />
                 </state>
               </provider>
             </entry>
@@ -51,8 +53,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="418">
-                  <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="32" selection-end-column="7" />
+                <state relative-caret-position="608">
+                  <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
                 </state>
               </provider>
             </entry>
@@ -95,6 +97,7 @@
       <find>params</find>
       <find>main</find>
       <find>tariffs</find>
+      <find>adv-bar</find>
     </findStrings>
     <replaceStrings>
       <replace>ffffff</replace>
@@ -158,12 +161,6 @@
               <item name="OwletexLanding" type="b2602c69:ProjectViewProjectNode" />
               <item name="OwletexLanding" type="462c0819:PsiDirectoryNode" />
               <item name="style" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OwletexLanding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OwletexLanding" type="462c0819:PsiDirectoryNode" />
-              <item name="style" type="462c0819:PsiDirectoryNode" />
-              <item name="style.less" type="620a8d5e:NestingTreeNode" />
             </path>
           </expand>
           <select />
@@ -236,18 +233,21 @@
       <workItem from="1545215841348" duration="58000" />
       <workItem from="1545216009465" duration="12000" />
       <workItem from="1545221870195" duration="2842000" />
-      <workItem from="1545228924756" duration="7790000" />
+      <workItem from="1545228924756" duration="8306000" />
+      <workItem from="1545301083768" duration="5804000" />
+      <workItem from="1545313243776" duration="7536000" />
+      <workItem from="1545386275356" duration="7832000" />
+      <workItem from="1545399849441" duration="6625000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166484000" />
+    <option name="totallyTimeSpent" value="194797000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13277134" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.103793465" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -259,8 +259,8 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32855567" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32855567" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32855567" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49947312" weight="0.32855567" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50052685" side_tool="true" weight="0.32855567" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -387,30 +387,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/img/exchanges-bg.svg" />
     <entry file="file://$PROJECT_DIR$/img/exchanges-greed.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/exchanges-bg.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="32" selection-end-column="7" />
+        <state relative-caret-position="608">
+          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="274" column="67" lean-forward="true" selection-start-line="274" selection-start-column="67" selection-end-line="274" selection-end-column="67" />
+        <state relative-caret-position="453">
+          <caret line="463" column="18" lean-forward="true" selection-start-line="463" selection-start-column="18" selection-end-line="463" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/style/style.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="755" column="16" selection-start-line="755" selection-start-column="16" selection-end-line="755" selection-end-column="16" />
+        <state relative-caret-position="528">
+          <caret line="1353" column="35" selection-start-line="1353" selection-start-column="35" selection-end-line="1353" selection-end-column="35" />
         </state>
       </provider>
     </entry>

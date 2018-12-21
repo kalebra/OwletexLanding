@@ -42,6 +42,9 @@ h3 {
 div {
   cursor: default;
 }
+.slick-slide {
+  margin: 0 16px;
+}
 .slick-slide > div {
   outline: none;
 }
@@ -51,6 +54,7 @@ div {
   height: 54px !important;
   box-shadow: 0 7.78378px 23.3514px rgba(80, 31, 165, 0.1);
   border-radius: 50%;
+  background: #ffffff !important;
 }
 .slick-prev:before,
 .slick-next:before {
@@ -69,7 +73,7 @@ div {
 .header-wrapper {
   height: 720px;
   width: 100%;
-  margin-bottom: 112px;
+  margin-bottom: 120px;
   position: relative;
 }
 .header-wrapper .header-background-wrapper {
@@ -84,10 +88,10 @@ div {
   position: absolute;
 }
 .header-wrapper .header-background-wrapper > img:first-child {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
   object-position: bottom;
+  width: 100%;
+  height: 100%;
 }
 .header-wrapper .header-background-wrapper > img:nth-child(2) {
   left: 50%;
@@ -100,7 +104,7 @@ header {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  height: 720px;
+  height: 810px;
   position: relative;
 }
 .top-line {
@@ -210,14 +214,13 @@ nav .divider {
   height: 779px;
 }
 .header-main-left {
-  flex: 0 1 42%;
+  flex: 0 0 552px;
 }
 .header-main-left h1 {
   font-family: 'TT Commons', sans-serif;
   font-size: 48px;
   color: #FFEC3D;
-  padding-bottom: 15px;
-  margin-bottom: 16px;
+  margin-bottom: 32px;
 }
 .header-main-left p {
   font-size: 18px;
@@ -227,35 +230,41 @@ nav .divider {
 .advantages {
   box-sizing: border-box;
   max-width: 1440px;
-  margin: 0 auto 142px;
+  margin: 0 auto 124px;
   padding: 24px 64px 0;
 }
-.advantages .adv-desc {
+.advantages .adv-desc .adv-desc-inner {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 8px;
 }
-.advantages .adv-desc .adv-desc-left {
+.advantages .adv-desc .adv-desc-inner .adv-desc-left {
   flex: 0 1 45%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.advantages .adv-desc .adv-desc-left h3 {
+.advantages .adv-desc .adv-desc-inner .adv-desc-left h3 {
   color: #38385F;
   margin-bottom: 24px;
 }
-.advantages .adv-desc .adv-desc-left p {
+.advantages .adv-desc .adv-desc-inner .adv-desc-left p {
   line-height: 28px;
-  margin-bottom: 72px;
 }
-.advantages .adv-desc .adv-desc-left .adv-bar {
+.advantages .adv-desc .adv-desc-inner .adv-desc-left .adv-bar {
   display: flex;
+}
+.advantages .adv-desc .adv-desc-inner img {
+  height: 482px;
+}
+.advantages .adv-desc .adv-bar {
+  display: none;
   align-items: center;
   height: 148px;
   position: relative;
   left: -34px;
 }
-.advantages .adv-desc .adv-desc-left .adv-bar .advantage {
+.advantages .adv-desc .adv-bar .advantage {
   width: 142px;
   height: 142px;
   display: flex;
@@ -265,7 +274,7 @@ nav .divider {
   box-sizing: border-box;
   margin-right: -24px;
 }
-.advantages .adv-desc .adv-desc-left .adv-bar .advantage > div {
+.advantages .adv-desc .adv-bar .advantage > div {
   box-sizing: border-box;
   width: 72px;
   height: 72px;
@@ -277,7 +286,7 @@ nav .divider {
   position: relative;
   user-select: none;
 }
-.advantages .adv-desc .adv-desc-left .adv-bar .advantage > div > div {
+.advantages .adv-desc .adv-bar .advantage > div > div {
   position: absolute;
   box-sizing: border-box;
   width: 72px;
@@ -290,84 +299,84 @@ nav .divider {
   cursor: pointer;
   user-select: none;
 }
-.advantages .adv-desc .adv-desc-left .adv-bar .advantage:first-child > div > div {
+.advantages .adv-desc .adv-bar .advantage:first-child > div > div {
   background-image: url("../img/advantages/icon/monitor.svg");
 }
-.advantages .adv-desc .adv-desc-left .adv-bar .advantage:nth-child(2) > div > div {
+.advantages .adv-desc .adv-bar .advantage:nth-child(2) > div > div {
   background-image: url("../img/advantages/icon/cpu.svg");
 }
-.advantages .adv-desc .adv-desc-left .adv-bar .advantage:nth-child(3) > div > div {
+.advantages .adv-desc .adv-bar .advantage:nth-child(3) > div > div {
   background-image: url("../img/advantages/icon/user.svg");
 }
-.advantages .adv-desc .adv-desc-left .adv-bar .advantage:nth-child(4) > div > div {
+.advantages .adv-desc .adv-bar .advantage:nth-child(4) > div > div {
   background-image: url("../img/advantages/icon/bar-chart.svg");
 }
-.advantages .adv-desc .adv-desc-left .adv-bar .advantage:last-child > div > div {
+.advantages .adv-desc .adv-bar .advantage:last-child > div > div {
   background-image: url("../img/advantages/icon/headphones.svg");
 }
-.advantages .adv-desc .adv-desc-left .adv-bar .advantage.active {
+.advantages .adv-desc .adv-bar .advantage.active {
   border: 1px solid #ffffff;
 }
-.advantages .adv-desc .adv-desc-left .adv-bar .advantage.active > div {
+.advantages .adv-desc .adv-bar .advantage.active > div {
   border: 16px solid #ffffff;
   width: 104px;
   height: 104px;
 }
-.advantages .adv-desc .adv-desc-left .adv-bar .advantage.active > div > div {
+.advantages .adv-desc .adv-bar .advantage.active > div > div {
   box-shadow: none;
 }
-.advantages .adv-desc .adv-desc-left .adv-bar .advantage.active:first-child {
+.advantages .adv-desc .adv-bar .advantage.active:first-child {
   border-color: rgba(78, 52, 203, 0.08);
 }
-.advantages .adv-desc .adv-desc-left .adv-bar .advantage.active:first-child > div {
+.advantages .adv-desc .adv-bar .advantage.active:first-child > div {
   border-color: rgba(78, 52, 203, 0.24);
 }
-.advantages .adv-desc .adv-desc-left .adv-bar .advantage.active:first-child > div > div {
+.advantages .adv-desc .adv-bar .advantage.active:first-child > div > div {
   background-image: url("../img/advantages/icon/monitor-active.svg");
   background-color: #4E34CB;
 }
-.advantages .adv-desc .adv-desc-left .adv-bar .advantage.active:nth-child(2) {
+.advantages .adv-desc .adv-bar .advantage.active:nth-child(2) {
   border-color: rgba(64, 186, 250, 0.08);
 }
-.advantages .adv-desc .adv-desc-left .adv-bar .advantage.active:nth-child(2) > div {
+.advantages .adv-desc .adv-bar .advantage.active:nth-child(2) > div {
   border-color: rgba(64, 186, 250, 0.24);
 }
-.advantages .adv-desc .adv-desc-left .adv-bar .advantage.active:nth-child(2) > div > div {
+.advantages .adv-desc .adv-bar .advantage.active:nth-child(2) > div > div {
   background-image: url("../img/advantages/icon/cpu-active.svg");
   background-color: #40BAFA;
 }
-.advantages .adv-desc .adv-desc-left .adv-bar .advantage.active:nth-child(3) {
+.advantages .adv-desc .adv-bar .advantage.active:nth-child(3) {
   border-color: rgba(243, 186, 47, 0.08);
 }
-.advantages .adv-desc .adv-desc-left .adv-bar .advantage.active:nth-child(3) > div {
+.advantages .adv-desc .adv-bar .advantage.active:nth-child(3) > div {
   border-color: rgba(243, 186, 47, 0.24);
 }
-.advantages .adv-desc .adv-desc-left .adv-bar .advantage.active:nth-child(3) > div > div {
+.advantages .adv-desc .adv-bar .advantage.active:nth-child(3) > div > div {
   background-image: url("../img/advantages/icon/user-active.svg");
   background-color: #F3BA2F;
 }
-.advantages .adv-desc .adv-desc-left .adv-bar .advantage.active:nth-child(4) {
+.advantages .adv-desc .adv-bar .advantage.active:nth-child(4) {
   border-color: rgba(116, 207, 14, 0.08);
 }
-.advantages .adv-desc .adv-desc-left .adv-bar .advantage.active:nth-child(4) > div {
+.advantages .adv-desc .adv-bar .advantage.active:nth-child(4) > div {
   border-color: rgba(116, 207, 14, 0.24);
 }
-.advantages .adv-desc .adv-desc-left .adv-bar .advantage.active:nth-child(4) > div > div {
+.advantages .adv-desc .adv-bar .advantage.active:nth-child(4) > div > div {
   background-image: url("../img/advantages/icon/bar-chart-active.svg");
   background-color: #74CF0E;
 }
-.advantages .adv-desc .adv-desc-left .adv-bar .advantage.active:last-child {
+.advantages .adv-desc .adv-bar .advantage.active:last-child {
   border-color: rgba(89, 126, 247, 0.08);
 }
-.advantages .adv-desc .adv-desc-left .adv-bar .advantage.active:last-child > div {
+.advantages .adv-desc .adv-bar .advantage.active:last-child > div {
   border-color: rgba(89, 126, 247, 0.24);
 }
-.advantages .adv-desc .adv-desc-left .adv-bar .advantage.active:last-child > div > div {
+.advantages .adv-desc .adv-bar .advantage.active:last-child > div > div {
   background-image: url("../img/advantages/icon/headphones-active.svg");
   background-color: #597EF7;
 }
 .exchanges {
-  margin-bottom: 45px;
+  margin-bottom: 104px;
   padding: 92px 0 143px;
   position: relative;
   background: linear-gradient(148.81deg, #501FA5 -0.06%, #A419B2 96.95%);
@@ -395,8 +404,8 @@ nav .divider {
   list-style: decimal;
 }
 .scheme-of-work .main-content {
+  max-width: 1440px;
   position: relative;
-  width: 1440px;
   padding: 0 206px;
   box-sizing: border-box;
   display: flex;
@@ -586,10 +595,10 @@ nav .divider {
   box-sizing: border-box;
 }
 .tariffs .cards-tariffs .slick-prev {
-  left: 37px !important;
+  left: 37px;
 }
 .tariffs .cards-tariffs .slick-next {
-  right: 37px !important;
+  right: 37px;
 }
 .tariffs .cards-tariffs .slick-track {
   display: flex;
@@ -713,6 +722,7 @@ nav .divider {
   padding: 0 129px;
   max-width: 1440px;
   margin: 24px auto 0;
+  box-sizing: border-box;
 }
 .tariffs .methods > div {
   flex: 0 1 50%;
@@ -724,25 +734,20 @@ nav .divider {
   margin-right: 75px;
 }
 .faq {
-  height: 900px;
   position: relative;
   overflow: hidden;
 }
 .faq > img {
   position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .faq > img:first-child {
-  width: 100%;
-  height: 100%;
   object-fit: contain;
   object-position: right;
 }
 .faq > img:nth-child(2) {
-  left: 50%;
-  transform: translateX(-50%);
-  top: 200px;
-  width: 1590px;
-  height: 704px;
+  bottom: 13px;
 }
 .faq h2 {
   position: relative;
@@ -751,8 +756,10 @@ nav .divider {
 }
 .faq .head-line {
   position: relative;
+  margin-bottom: 96px;
 }
 .faq-inner {
+  box-sizing: border-box;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -898,6 +905,9 @@ nav .divider {
   padding: 35px 128px 0;
   display: flex;
   flex-direction: column;
+  max-width: 1440px;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 .news .head-line {
   margin-bottom: 76px;
@@ -909,41 +919,39 @@ nav .divider {
   right: -75px !important;
 }
 .news .news-cards {
-  max-width: 1184px;
+  width: 100%;
   margin: 0 auto 40px;
 }
-.news .news-cards .slick-slide {
-  margin: 0 16px;
-}
-.news .news-cards .slick-slide:nth-child(3n) .card-head {
+.news .news-cards:nth-child(3n) .card-head {
   background: #501FA5;
 }
-.news .news-cards .slick-slide:nth-child(3n + 1) .card-head {
+.news .news-cards:nth-child(3n + 1) .card-head {
   background: #7D02CA;
 }
-.news .news-cards .slick-slide:nth-child(3n + 2) .card-head {
+.news .news-cards:nth-child(3n + 2) .card-head {
   background: #A419B2;
 }
-.news .news-cards .slick-slide .news-card {
+.news .news-cards .news-card {
+  width: 374px;
   height: 500px;
   box-shadow: 0 8px 24px rgba(80, 31, 165, 0.1);
   border-radius: 4px;
   margin: 24px 0;
 }
-.news .news-cards .slick-slide .news-card .card-head {
+.news .news-cards .news-card .card-head {
   height: 192px;
 }
-.news .news-cards .slick-slide .news-card .card-body {
+.news .news-cards .news-card .card-body {
   padding: 24px;
 }
-.news .news-cards .slick-slide .news-card .card-body .news-header {
+.news .news-cards .news-card .card-body .news-header {
   font-weight: 500;
   line-height: 28px;
   font-size: 20px;
   color: #38385F;
   margin-bottom: 16px;
 }
-.news .news-cards .slick-slide .news-card .card-body .news-content {
+.news .news-cards .news-card .card-body .news-content {
   line-height: 24px;
 }
 .news .btn-all-news {
@@ -969,6 +977,9 @@ nav .divider {
   align-items: center;
   height: 297px;
   box-sizing: border-box;
+}
+.partners h2 {
+  margin-bottom: 50px;
 }
 .partners .partners-logos {
   max-width: 1440px;
@@ -1123,6 +1134,138 @@ footer .copyrights div:first-child {
 @media screen and (min-width: 1441px) {
   .main-opportunities .main-content .opp-img img {
     width: 100%;
+  }
+}
+@media screen and (max-width: 1439px) {
+  .header-wrapper .header-background-wrapper > img:first-child {
+    object-position: left;
+  }
+  .header-wrapper header {
+    overflow: hidden;
+  }
+  .header-wrapper header .header-main img {
+    right: -417px;
+  }
+  .advantages {
+    padding: 24px 48px 0;
+    margin: 0 auto 152px;
+  }
+  .advantages .adv-desc .adv-desc-inner .adv-desc-left {
+    width: 41%;
+  }
+  .advantages .adv-desc .adv-desc-inner .adv-desc-left .adv-bar {
+    display: none;
+  }
+  .advantages .adv-desc .adv-desc-inner img {
+    width: 490px;
+    height: 300px;
+  }
+  .advantages .adv-desc > .adv-bar {
+    display: flex;
+  }
+  .scheme-of-work .main-content {
+    max-width: 1024px;
+    padding: 0 46px;
+  }
+  .scheme-of-work .main-content > img {
+    display: none;
+  }
+  .scheme-of-work .main-content .scheme-image {
+    margin-right: 40px;
+  }
+  .main-opportunities .main-content .opp-text {
+    width: 424px;
+  }
+  .main-opportunities .main-content {
+    height: 2500px;
+  }
+  .main-opportunities .main-content .opp-imgs {
+    height: 2700px;
+  }
+  .tariffs .cards-tariffs .slick-prev {
+    left: 5px;
+  }
+  .tariffs .cards-tariffs .slick-next {
+    right: 5px;
+  }
+  .tariffs .cards-tariffs .card-tariffs .card-body {
+    padding: 49px 14px 24px;
+  }
+  .tariffs .cards-tariffs .card-tariffs .card-body .opps {
+    padding: 0 18px;
+  }
+  .tariffs .cards-tariffs .card-tariffs .card-body .opps .opp {
+    justify-content: flex-end;
+  }
+  .tariffs .cards-tariffs .card-tariffs .card-body .opps .opp:before {
+    left: 0;
+  }
+  .tariffs .cards-tariffs {
+    padding: 0  48px;
+  }
+  .faq-inner {
+    padding: 0 48px 251px;
+  }
+  .quick-answers .question-body {
+    padding: 8px 17px;
+  }
+  .ask-info {
+    height: 108px;
+  }
+  .ask-info:before {
+    top: 18px;
+  }
+  .ask-form .ask-from-body textarea {
+    height: 123px;
+  }
+  .ask-form .ask-from-body .ask-send {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ask-form .ask-from-body .ask-send .captcha {
+    margin-bottom: 16px;
+  }
+  .news {
+    padding: 35px 0 0;
+  }
+  .news .news-cards .news-card {
+    height: auto;
+  }
+  .news .slick-next {
+    display: none !important;
+  }
+  footer {
+    padding: 0 48px;
+  }
+  footer .main-content {
+    flex-wrap: wrap;
+    padding: 90px 0 52px;
+  }
+  footer .main-content .company-info {
+    margin-bottom: 32px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .header-wrapper {
+    margin-bottom: 526px;
+  }
+  .header-wrapper header {
+    height: 1120px;
+  }
+  .header-wrapper header .header-main img {
+    left: 56%;
+    transform: translateX(-50%);
+    top: 181px;
+  }
+  .advantages .adv-desc {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .advantages .adv-desc .adv-desc-left .adv-bar {
+    display: none;
+  }
+  .advantages .adv-desc > .adv-bar {
+    display: flex;
   }
 }
 /*# sourceMappingURL=style.css.map */
