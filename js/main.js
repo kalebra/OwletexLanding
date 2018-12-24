@@ -23,8 +23,13 @@ $(function() {
     $('.cards-tariffs').slick({
         infinite: true,
         slidesToShow: 4,
-        slidesToScroll: 1
-        // variableWidth: true
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: "unslick"
+            }
+        ]
     });
 
     $('.news-cards').slick({
@@ -32,7 +37,17 @@ $(function() {
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    infinite: false,
+                    variableWidth: true,
+                }
+            }
+        ]
     });
 
     $(window).scroll(function(){
@@ -43,5 +58,4 @@ $(function() {
             $('.opp-imgs').removeClass('smaller');
         }
     });
-
 });

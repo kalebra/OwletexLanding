@@ -3,12 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3a9f0bfe-2a7b-42d2-9a91-6532b4e6d010" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/advantages/img/adv-example.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/advantages/img/adv-example.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/delete/exchanges-bg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/delete/exchanges-greed.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/delete/header-greed.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/delete/header-main-img.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/faq-bg.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/faq-bg.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.css" afterDir="false" />
@@ -25,14 +19,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.56379104">
+    <splitter split-orientation="horizontal" split-proportion="0.51969427">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="453">
-                  <caret line="463" column="18" lean-forward="true" selection-start-line="463" selection-start-column="18" selection-end-line="463" selection-end-column="18" />
+                <state relative-caret-position="589">
+                  <caret line="72" column="40" lean-forward="true" selection-start-line="72" selection-start-column="40" selection-end-line="72" selection-end-column="40" />
                 </state>
               </provider>
             </entry>
@@ -44,8 +38,14 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/style/style.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="528">
-                  <caret line="1353" column="35" selection-start-line="1353" selection-start-column="35" selection-end-line="1353" selection-end-column="35" />
+                <state relative-caret-position="599">
+                  <caret line="1586" column="13" selection-start-line="1586" selection-start-column="13" selection-end-line="1586" selection-end-column="13" />
+                  <folding>
+                    <element signature="e#25915#26013#0" />
+                    <element signature="e#26053#26128#0" />
+                    <element signature="e#26168#28495#0" />
+                    <element signature="e#28535#32207#0" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -53,15 +53,10 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="608">
-                  <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+                <state relative-caret-position="447">
+                  <caret line="39" column="28" lean-forward="true" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
                 </state>
               </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/img/exchanges-greed.svg">
-              <provider selected="true" editor-type-id="images" />
             </entry>
           </file>
         </leaf>
@@ -98,6 +93,7 @@
       <find>main</find>
       <find>tariffs</find>
       <find>adv-bar</find>
+      <find>methods</find>
     </findStrings>
     <replaceStrings>
       <replace>ffffff</replace>
@@ -156,6 +152,11 @@
               <item name="OwletexLanding" type="b2602c69:ProjectViewProjectNode" />
               <item name="OwletexLanding" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OwletexLanding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OwletexLanding" type="462c0819:PsiDirectoryNode" />
+              <item name="slick" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="OwletexLanding" type="b2602c69:ProjectViewProjectNode" />
@@ -238,16 +239,25 @@
       <workItem from="1545313243776" duration="7536000" />
       <workItem from="1545386275356" duration="7832000" />
       <workItem from="1545399849441" duration="6625000" />
+      <workItem from="1545409260840" duration="662000" />
+      <workItem from="1545643737898" duration="1485000" />
+      <workItem from="1545648337287" duration="34000" />
+      <workItem from="1545648757674" duration="1858000" />
+      <workItem from="1545650634579" duration="936000" />
+      <workItem from="1545653610285" duration="2519000" />
+      <workItem from="1545656400002" duration="11654000" />
+      <workItem from="1545670078891" duration="1177000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="194797000" />
+    <option name="totallyTimeSpent" value="215122000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.103793465" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.103793465" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -393,22 +403,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+        <state relative-caret-position="447">
+          <caret line="39" column="28" lean-forward="true" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="463" column="18" lean-forward="true" selection-start-line="463" selection-start-column="18" selection-end-line="463" selection-end-column="18" />
+        <state relative-caret-position="589">
+          <caret line="72" column="40" lean-forward="true" selection-start-line="72" selection-start-column="40" selection-end-line="72" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/style/style.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="1353" column="35" selection-start-line="1353" selection-start-column="35" selection-end-line="1353" selection-end-column="35" />
+        <state relative-caret-position="599">
+          <caret line="1586" column="13" selection-start-line="1586" selection-start-column="13" selection-end-line="1586" selection-end-column="13" />
+          <folding>
+            <element signature="e#25915#26013#0" />
+            <element signature="e#26053#26128#0" />
+            <element signature="e#26168#28495#0" />
+            <element signature="e#28535#32207#0" />
+          </folding>
         </state>
       </provider>
     </entry>

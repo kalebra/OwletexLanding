@@ -477,7 +477,7 @@ nav {
     color: #fff;
   }
   .head-line {
-    margin-bottom: 118px;
+    margin-bottom: 144px;
   }
   h3 {
     color: #FFFFFF;
@@ -506,6 +506,9 @@ nav {
       }
       &:last-child {
         margin-bottom: 0;
+      }
+      > img {
+        display: none;
       }
     }
     .opp-imgs {
@@ -576,6 +579,9 @@ nav {
       }
     }
   }
+  .opp-imgs-mobile {
+    display: none;
+  }
   .want-to-try {
     margin-top: -200px;
     img:nth-child(2), img:last-child {
@@ -616,7 +622,7 @@ nav {
   }
   .cards-tariffs {
     max-width: 1440px;
-    margin: 0 auto 40px;
+    margin: 0 auto 44px;
     padding: 0 128px;
     box-sizing: border-box;
     .slick-prev {
@@ -635,7 +641,7 @@ nav {
     .card-tariffs {
       box-shadow: 0 8px 24px rgba(125, 2, 202, 0.1);
       border-radius: 4px;
-      margin: 24px 0;
+      margin-bottom: 20px;
       .card-head {
         height: 92px;
         display: flex;
@@ -647,17 +653,18 @@ nav {
         }
       }
       .card-body {
+        box-sizing: border-box;
         height: 358px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 49px 26px 24px;
+        padding: 40px 26px 24px;
         background: #ffffff;
         .opps {
           padding: 0 6px;
           .opp {
             box-sizing: border-box;
-            height: 40px;
+            height: 38px;
             border-top: 1px solid rgba(0, 0, 0, 0.04);
             display: flex;
             align-items: center;
@@ -684,7 +691,7 @@ nav {
           text-align: center;
           &.best {
             color: #EB4A60;
-            margin-bottom: 50px;
+            margin-bottom: 13px;
           }
         }
         .discount {
@@ -700,7 +707,8 @@ nav {
             background-color: rgba(56, 56, 95, 0.65);
             position: absolute;
             top: 8px;
-            left: 79px;
+            left: 50%;
+            transform: translateX(-50%);
           }
         }
         .btn-buy {
@@ -738,27 +746,26 @@ nav {
         }
         .card-body {
           height: 428px;
+          .opps {
+            .opp:last-child {
+              margin-bottom: 24px;
+            }
+          }
         }
       }
     }
   }
   .methods {
     display: flex;
-    justify-content: space-between;
-    padding: 0 129px;
+    justify-content: center;
     max-width: 1440px;
     margin: 24px auto 0;
     box-sizing: border-box;
-    > div {
-      flex: 0 1 50%;
-    }
-    .methods-right {
-      img {
-        margin-left: 204px;
+    > img {
+      margin-right: 45px;
+      &:last-child {
+        margin-right: 0;
       }
-    }
-    img {
-      margin-right: 75px;
     }
   }
 }
@@ -946,7 +953,7 @@ nav {
   box-sizing: border-box;
   margin: 0 auto;
   .head-line {
-    margin-bottom: 76px;
+    margin-bottom: 28px;
   }
   .slick-prev {
     left: -75px !important;
@@ -957,6 +964,7 @@ nav {
   .news-cards{
     width: 100%;
     margin: 0 auto 40px;
+    padding: 0 48px;
       &:nth-child(3n) {
         .card-head {
           background: #501FA5;
@@ -1206,6 +1214,9 @@ footer {
         object-position: left;
       }
     }
+    .top-line {
+      padding: 0 48px;
+    }
     header {
       overflow: hidden;
       .header-main {
@@ -1250,6 +1261,7 @@ footer {
   }
   .main-opportunities {
     .main-content {
+      padding-left: 48px;
       .opp-text {
         width: 424px;
       }
@@ -1273,7 +1285,7 @@ footer {
       }
       .card-tariffs {
         .card-body {
-          padding: 49px 14px 24px;
+          padding: 40px 14px 24px;
           .opps {
             padding: 0 18px;
             .opp {
@@ -1349,7 +1361,16 @@ footer {
       }
     }
   }
+  nav {
+    a:first-child, a:nth-child(2), div:nth-child(3) {
+        display: none;
+    }
+  }
   .advantages {
+    margin: 0 auto 106px;
+    .head-line {
+      margin: 0 auto 21px;
+    }
     .adv-desc {
       display: flex;
       flex-direction: column-reverse;
@@ -1359,7 +1380,222 @@ footer {
         }
       }
       > .adv-bar {
-        display: flex;
+        position: static;
+        margin-bottom: 33px;
+        .advantage {
+          margin-right: -7px;
+
+        }
+      }
+      .adv-desc-inner {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
+        .adv-desc-left {
+          width: auto;
+          margin-bottom: 32px;
+        }
+        > img {
+          width: 100%;
+          height: 414px;
+        }
+      }
+    }
+  }
+  .scheme-of-work {
+    .main-content {
+      flex-direction: column-reverse;
+      margin: 0 auto 64px;
+      .scheme-steps {
+        margin-bottom: 34px;
+        li {
+          margin-left: 18px;
+        }
+      }
+      .scheme-image {
+        margin-right: 0;
+        #scheme-anim {
+          height: 878px;
+        }
+      }
+    }
+    .btn-reg {
+      margin: 0 auto 198px;
+    }
+  }
+  .main-opportunities {
+    padding: 92px 0 80px;
+    .main-content {
+      flex-direction: column;
+      padding: 0;
+      margin: 0 auto 590px;
+      .opp-texts {
+        .opp-text {
+          width: auto;
+          height: 920px;
+          position: relative;
+          padding: 0 48px;
+          margin-bottom: 96px;
+          overflow: hidden;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          > img {
+            display: block;
+            position: absolute;
+            top: 410px;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+        }
+      }
+      .opp-imgs {
+        display: none;
+      }
+    }
+    .opp-imgs-mobile {
+      display: block;
+      position: relative;
+      height: 315px;
+      margin-bottom: 40px;
+      > img {
+        width: 537px;
+        position: absolute;
+        &:nth-child(2) {
+          left: 15%;
+        }
+        &:last-child {
+          right: 0;
+        }
+      }
+    }
+    .want-to-try {
+      margin-top: 0;
+    }
+  }
+  .tariffs {
+    padding-top: 192px;
+    margin-bottom: 128px;
+    > img {
+      display: none;
+    }
+    .head-line {
+      margin-bottom: 76px;
+    }
+    .cards-tariffs {
+      padding: 0 124px;
+      .card-tariffs {
+        margin-bottom: 48px;
+        &:last-child {
+          margin-bottom: 64px;
+        }
+        .card-body {
+          padding: 49px 26px 24px;
+          .opps {
+            padding: 0 6px;
+            .opp {
+              justify-content: center;
+              &:before {
+                left: 149px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .methods {
+      padding: 0 48px;
+      justify-content: space-between;
+      > img {
+        margin-right: 0;
+      }
+    }
+  }
+  .faq {
+    > img:nth-child(2) {
+      display: none;
+    }
+    .faq-inner {
+      flex-direction: column;
+      padding: 0 48px 152px;
+      .quick-answers {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 32px;
+      }
+      .ask {
+        margin-left: 0;
+        .ask-info {
+          height: 82px;
+        }
+      }
+    }
+  }
+  .news {
+    padding: 0;
+    .news-cards {
+      padding: 0 33px;
+      .slick-list {
+        padding: 0 15px;
+        .slick-slide {
+          width: 373px !important;
+        }
+      }
+    }
+  }
+  footer {
+    .main-content {
+      .company-info {
+        flex: 0 1 343px;
+        > div {
+          line-height: 22px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-wrapper {
+    .header-background-wrapper > img {
+      &:first-child {
+        display: none;
+      }
+      &:nth-child(2) {
+        z-index: 1;
+      }
+    }
+    header {
+      height: 700px;
+      background: linear-gradient(103.42deg, #501FA5 -21.09%, #A419B2 120.66%);
+      .top-line {
+        padding: 0 24px;
+        margin-bottom: 71px;
+        nav > a:nth-child(4), .dropdown-language {
+          display: none;
+        }
+      }
+      .header-main {
+        display: block;
+        padding: 0 24px;
+        .header-main-left {
+          flex: 0 1 auto;
+          h1 {
+            font-size: 24px;
+            line-height: 28px;
+            margin-bottom: 16px;
+          }
+          p {
+            font-size: 12px;
+            line-height: 20px;
+          }
+        }
+        img {
+          width: 348px;
+          height: 322px;
+          left: 55%;
+          z-index: 2;
+        }
       }
     }
   }
