@@ -73,6 +73,26 @@ div {
   transform: rotate(180deg);
 }
 
+.sign-up {
+  box-sizing: border-box;
+  width: 188px;
+  height: 40px;
+  color: #563CD4;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  background-color: #FFEC3D;
+  border-radius: 4px;
+  margin-right: 24px;
+}
+
+input, textarea {
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 1px 1px #FFEC3D;
+  }
+}
+
 // Header
 .header-wrapper {
   height: 720px;
@@ -147,18 +167,6 @@ nav {
     &:nth-child(2) {
       margin-right: 56px;
     }
-    &:nth-child(4) {
-      box-sizing: border-box;
-      width: 188px;
-      height: 40px;
-      color: #563CD4;
-      padding: 0 16px;
-      display: flex;
-      align-items: center;
-      background-color: #FFEC3D;
-      border-radius: 4px;
-      margin-right: 24px;
-    }
   }
   .divider {
     height: 24px;
@@ -203,8 +211,8 @@ nav {
   padding: 12px 9px;
   cursor: pointer;
   position: relative;
-  z-index: 1;
-  span {
+  z-index: 3;
+  > span {
     display: block;
     background-color: #563CD4;
     width: 22px;
@@ -218,26 +226,14 @@ nav {
     &:nth-child(2), &:nth-child(3) {
       top: 18px;
     }
-    &:last-child {
+    &:nth-child(4) {
       top: 24px;
     }
   }
-  &.open {
-    span {
-      &:first-child, &:last-child {
-        display: none;
-      }
-      &:nth-child(2) {
-        transform: rotate(45deg);
-      }
-       &:nth-child(3) {
-         transform: rotate(-45deg);
-      }
-    }
-  }
   .burger-menu {
+    display: none;
     box-sizing: border-box;
-    width: 303px;
+    width: 304px;
     height: 392px;
     background: #fff;
     border-radius: 4px;
@@ -246,7 +242,7 @@ nav {
     right: 0;
     top: 48px;
     box-shadow: 0 8px 24px rgba(125, 2, 202, 0.1);
-    a {
+    > a {
       box-sizing: border-box;
       display: block;
       height: 40px;
@@ -261,6 +257,40 @@ nav {
       }
       &:hover {
         background: rgba(99, 19, 181, 0.16);
+      }
+    }
+    > div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .sign-up, .dropdown-language {
+        display: none;
+        margin: 0;
+        > a {
+          margin: 0;
+        }
+      }
+      .dropdown-language {
+        .dropdown-active {
+          color: #38385F;
+          border: 1px solid rgba(0, 0, 0, 0.45);
+          .arrow-down {
+            background: url("../img/arrow-down-dark.svg") no-repeat;
+          }
+        }
+      }
+    }
+  }
+  &.open {
+    > span {
+      &:first-child, &:nth-child(4) {
+        display: none;
+      }
+      &:nth-child(2) {
+        transform: rotate(45deg);
+      }
+      &:nth-child(3) {
+        transform: rotate(-45deg);
       }
     }
   }
@@ -312,19 +342,41 @@ nav {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        h3 {
-          color: #38385F;
-          margin-bottom: 24px;
-        }
-        p {
-          line-height: 28px;
+        > div:first-child {
+          > div {
+            display: none;
+            opacity: 0;
+            transition: all 1s ease-in-out;
+            &.active {
+              display: block;
+              opacity: 1;
+            }
+            h3 {
+              color: #38385F;
+              margin-bottom: 24px;
+            }
+            p {
+              line-height: 28px;
+            }
+          }
         }
         .adv-bar {
           display: flex;
         }
       }
-      img {
-        height: 482px;
+      .adv-desc-right {
+        width: 589px;
+        height: 394px;
+        position: relative;
+        > div {
+          display: none;
+          position: absolute;
+          top: 0;
+          right: 0;
+          &:first-child {
+            display: block;
+          }
+        }
       }
     }
     .adv-bar {
@@ -1647,8 +1699,10 @@ footer {
       .top-line {
         padding: 0 24px;
         margin-bottom: 32px;
-        nav > a:nth-child(4), .dropdown-language {
-          display: none;
+        nav {
+          > .sign-up, > .dropdown-language {
+            display: none;
+          }
         }
       }
       .header-main {
@@ -1672,6 +1726,19 @@ footer {
           left: 55%;
           z-index: 2;
         }
+      }
+    }
+  }
+  .burger .burger-menu {
+    height: 488px;
+    right: -16px;
+    > div {
+      .sign-up {
+        display: flex;
+      }
+      .dropdown-language {
+        display: block;
+
       }
     }
   }
