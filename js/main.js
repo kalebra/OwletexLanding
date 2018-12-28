@@ -60,7 +60,12 @@ $(function() {
         }
         switch($(this).attr('id')) {
         case 'a1':
-            $.when( $('.adv-desc-right > div.active').fadeOut() ).then(function(){
+        case 'a11':
+            $.when( $('.adv-desc-left > div:first-child > div.active').fadeOut(200) ).then(function() {
+                $('.adv-desc-left > div:first-child > div.active').removeClass('active');
+                $('.adv-desc-left > div:first-child > div#b1').fadeIn(1).addClass('active');
+            });
+            $.when( $('.adv-desc-right > div.active').fadeOut().removeClass('active') ).then(function(){
                 $.when($('.adv-desc-right #anim-1').fadeIn().addClass('active')).then(function() {
                     anim1.play();
                     anim2.stop();
@@ -69,14 +74,16 @@ $(function() {
                     anim5.stop();
                 });
             });
-            $.when( $('.adv-desc-left > div:first-child > div.active').fadeOut() ).then(function() {
-                $('.adv-desc-left > div:first-child > div.active').removeClass('active');
-                $('.adv-desc-left > div:first-child > div#b1').fadeIn().addClass('active');
-            });
         break;
 
         case 'a2':
-            $.when( $('.adv-desc-right > div.active').fadeOut() ).then(function(){
+        case 'a22':
+            $.when( $('.adv-desc-left > div:first-child > div.active').fadeOut(200) ).then(function() {
+                $('.adv-desc-left > div:first-child > div.active').removeClass('active');
+                $('.adv-desc-left > div:first-child > div#b2').fadeIn(1).addClass('active');
+            });
+
+            $.when( $('.adv-desc-right > div.active').fadeOut().removeClass('active') ).then(function(){
                 $.when($('.adv-desc-right #anim-2').fadeIn().addClass('active')).then(function() {
                     anim1.stop();
                     anim2.play();
@@ -85,14 +92,15 @@ $(function() {
                     anim5.stop();
                 });
             });
-            $.when( $('.adv-desc-left > div:first-child > div.active').fadeOut() ).then(function() {
-                $('.adv-desc-left > div:first-child > div.active').removeClass('active');
-                $('.adv-desc-left > div:first-child > div#b2').fadeIn().addClass('active');
-            });
         break;
 
         case 'a3':
-            $.when( $('.adv-desc-right > div.active').fadeOut() ).then(function(){
+        case 'a33':
+            $.when( $('.adv-desc-left > div:first-child > div.active').fadeOut(200) ).then(function() {
+                $('.adv-desc-left > div:first-child > div.active').removeClass('active');
+                $('.adv-desc-left > div:first-child > div#b3').fadeIn(1).addClass('active');
+            });
+            $.when( $('.adv-desc-right > div.active').fadeOut().removeClass('active') ).then(function(){
                 $.when($('.adv-desc-right #anim-3').fadeIn().addClass('active')).then(function() {
                     anim1.stop();
                     anim2.stop();
@@ -101,14 +109,15 @@ $(function() {
                     anim5.stop();
                 });
             });
-            $.when( $('.adv-desc-left > div:first-child > div.active').fadeOut() ).then(function() {
-                $('.adv-desc-left > div:first-child > div.active').removeClass('active');
-                $('.adv-desc-left > div:first-child > div#b3').fadeIn().addClass('active');
-            });
         break;
 
         case 'a4':
-            $.when( $('.adv-desc-right > div.active').fadeOut() ).then(function(){
+        case 'a44':
+            $.when( $('.adv-desc-left > div:first-child > div.active').fadeOut(200) ).then(function() {
+                $('.adv-desc-left > div:first-child > div.active').removeClass('active');
+                $('.adv-desc-left > div:first-child > div#b4').fadeIn(1).addClass('active');
+            });
+            $.when( $('.adv-desc-right > div.active').fadeOut().removeClass('active') ).then(function(){
                 $.when($('.adv-desc-right #anim-4').fadeIn().addClass('active')).then(function() {
                     anim1.stop();
                     anim2.stop();
@@ -117,14 +126,15 @@ $(function() {
                     anim5.stop();
                 });
             });
-            $.when( $('.adv-desc-left > div:first-child > div.active').fadeOut() ).then(function() {
-                $('.adv-desc-left > div:first-child > div.active').removeClass('active');
-                $('.adv-desc-left > div:first-child > div#b4').fadeIn().addClass('active');
-            });
         break;
 
         case 'a5':
-            $.when( $('.adv-desc-right > div.active').fadeOut() ).then(function(){
+        case 'a55':
+            $.when( $('.adv-desc-left > div:first-child > div.active').fadeOut(200) ).then(function() {
+                $('.adv-desc-left > div:first-child > div.active').removeClass('active');
+                $('.adv-desc-left > div:first-child > div#b5').fadeIn(1).addClass('active');
+            });
+            $.when( $('.adv-desc-right > div.active').fadeOut().removeClass('active') ).then(function(){
                 $.when($('.adv-desc-right #anim-5').fadeIn().addClass('active')).then(function() {
                         anim1.stop();
                         anim2.stop();
@@ -132,10 +142,6 @@ $(function() {
                         anim4.stop();
                         anim5.play();
                 });
-            });
-            $.when( $('.adv-desc-left > div:first-child > div.active').fadeOut() ).then(function() {
-                $('.adv-desc-left > div:first-child > div.active').removeClass('active');
-                $('.adv-desc-left > div:first-child > div#b5').fadeIn().addClass('active');
             });
         break;
         }
